@@ -24,7 +24,7 @@ sequenceDiagram
     participant P as Payment mock
     participant N as Notification mock
     C->>B: POST /api/v1/bookings + Idempotency-Key + X-Request-ID
-    B->>B: Lock key; persist PENDING and payload
+    B->>B: Lock key and persist PENDING and payload
     B->>I: POST /api/v1/holds (deterministic booking ID)
     I->>I: Atomic conditional UPDATE + insert hold + save replay
     I-->>B: 201 amount_cents

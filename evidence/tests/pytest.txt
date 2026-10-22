@@ -1,0 +1,3 @@
+..............                                                           [100%]
+- generated xml file: /Users/ssk756/Library/CloudStorage/OneDrive-Sky/Documents/scalable_assignment/evidence/tests/junit.xml -
+14 passed in 1.32s

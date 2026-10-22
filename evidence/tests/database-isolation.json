@@ -1,0 +1,46 @@
+{
+  "timestamp": "2026-10-22T18:14:32.733543+00:00",
+  "command": "python scripts/export_artifacts.py",
+  "roles": {
+    "booking": {
+      "role": "booking_user",
+      "database": "booking",
+      "connect_permissions": {
+        "booking": true,
+        "inventory": false,
+        "payment": false,
+        "notification": false
+      }
+    },
+    "inventory": {
+      "role": "inventory_user",
+      "database": "inventory",
+      "connect_permissions": {
+        "booking": false,
+        "inventory": true,
+        "payment": false,
+        "notification": false
+      }
+    },
+    "payment": {
+      "role": "payment_user",
+      "database": "payment",
+      "connect_permissions": {
+        "booking": false,
+        "inventory": false,
+        "payment": true,
+        "notification": false
+      }
+    },
+    "notification": {
+      "role": "notification_user",
+      "database": "notification",
+      "connect_permissions": {
+        "booking": false,
+        "inventory": false,
+        "payment": false,
+        "notification": true
+      }
+    }
+  }
+}

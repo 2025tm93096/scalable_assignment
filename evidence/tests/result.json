@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-10-22T18:13:17.210767+00:00",
+  "command": "python scripts/challenges.py e2e",
+  "claim": "Main transaction completes across all four services",
+  "event_id": "evidence-ca812185-8f35-4367-8900-595e438b8a06",
+  "booking": {
+    "status": 201,
+    "body": {
+      "id": "886b1a67-888b-5cb2-8d8b-a0760f4f1ca6",
+      "state": "CONFIRMED",
+      "amount_cents": 2500,
+      "reason": ""
+    },
+    "replayed": "false"
+  },
+  "delivery": {
+    "status": 200,
+    "body": {
+      "booking_id": "886b1a67-888b-5cb2-8d8b-a0760f4f1ca6",
+      "recipient": "student@example.test",
+      "state": "DELIVERED"
+    },
+    "replayed": "false"
+  }
+}
